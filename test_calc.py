@@ -30,12 +30,6 @@ class test_StaticCalc(unittest.TestCase):
     def test_div_fail(self):
         assert calc.div(3,1) != 1
 
-    def test_sq(self):
-        assert calc.sq(2) == 4
-
-    def test_sq_fail(self):
-        assert calc.sq(3) != 1
-
     def test_rt(self):
         assert calc.rt(4) == 2
 
