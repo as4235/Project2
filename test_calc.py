@@ -29,6 +29,12 @@ class test_StaticCalc(unittest.TestCase):
 
     def test_div_fail(self):
         assert calc.div(3,1) != 1
+        
+    def test_sq(self):
+        assert calc.rt(4) == 16
+
+    def test_sq_fail(self):
+        assert calc.rt(9) != 1    
 
     def test_rt(self):
         assert calc.rt(4) == 2
