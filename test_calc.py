@@ -3,7 +3,7 @@ import pytest
 import unittest
 
 
-class test_StaticCalc(unittest.TestCase):
+class test_calc(unittest.TestCase):
     
     
     def test_add(self):
