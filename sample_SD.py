@@ -4,6 +4,7 @@ import math
 data = reader('data.csv')
 
 def sample_standardDeviation(data):
+    data = int(data)
     mean = sum(data) / len(data)
     std = math.sqrt(sum([(val - mean)**2 for val in data])/(len(data) - 1))
 
