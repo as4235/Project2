@@ -1,6 +1,7 @@
 from readcsvfile import reader
 import pytest
 import unittest
+testData = [1,2,3]
 
 data = reader('data.csv')
 
@@ -61,4 +62,57 @@ class test_stat(unittest.TestCase):
     def test_stdscore_fail(self):
         from stdscore import stdscore
         assert stdscore(data) != 16
+ 
+# confidence interval
+    def test_calc_confidenceInterval():
+        from confidence_interval import confidenceInterval
+        assert confidenceInterval(testData) == 1.076
+
+    def test_calc_confidenceInterval_fail():
+        from confidence_interval import confidenceInterval
+        assert confidenceInterval(testData) != 5
+ 
+
+# Population variance
+    def test_calc_variance():
+        from population_variance import pop_variance
+        assert variance(data) == variance(data)
+
+    def test_calc_variance_fail():
+        from population_variance import pop_variance
+        assert variance(data) != 2
+        
+        
+ #Sample Mean 
+    def test_calc_sampleMean():
+        from sample_mean import SampMean
+        assert SampMean(testData) == 2
+
+    def test_calc_sampleMean_fail():
+        from sample_mean import SampMean
+        assert SampMean(testData) != 1
+       
+  
+# Sample Standard deviation 
+    def test_calc_std():
+        from sample_SD import sample_standardDeviation
+        assert sample_standardDeviation(data) == sample_standardDeviation(data)
+
+    def test_calc_std_fail():
+        from StatisticsModule import standardDeviation
+        assert sample_standardDeviation(data) != 2
+    
+    
+  # Variance of sample proportion
+    def test_calc_varianceSampleProportion():
+        from variance_of_sample_proportion import VSP
+        assert VSP(testData) == 1
+
+    def test_calc_varianceSampleProportion_fail():
+        from variance_of_sample_proportion import VSP
+        assert VSP(testData) != 2
+
+   
+# Correlation Coefficient
+# Proportion
 
