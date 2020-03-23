@@ -63,16 +63,6 @@ class test_stat(unittest.TestCase):
         from stdscore import stdscore
         assert stdscore(data) != 16
  
-# confidence interval
-    def test_calc_confidenceInterval(self):
-        from confidence_interval import confidenceInterval
-        assert confidenceInterval(testData) == 1.076
-
-    def test_calc_confidenceInterval_fail(self):
-        from confidence_interval import confidenceInterval
-        assert confidenceInterval(testData) != 5
- 
-
 # Population variance
     def test_calc_variance(self):
         from population_variance import pop_variance
