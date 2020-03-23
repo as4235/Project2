@@ -6,9 +6,9 @@ data = reader('data.csv')
 def variance_of_sample_proportion(data):
     if len(data) == 0:
         result = 0
+    sum_of_dataset = sum(data)
     sum = int(sum)
     sum_of_dataset = int(sum_of_dataset)
-    sum_of_dataset = sum(data)
     if sum_of_dataset == 0:
         result = 0
 
