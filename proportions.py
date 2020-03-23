@@ -1,5 +1,5 @@
-from FileReader import readCSV
-data = readCSV('data.csv')
+from readcsvfile import reader
+data = reader('data.csv')
 
 
 def Proportion(data):
