@@ -7,6 +7,7 @@ def pop_variance(data):
     if len(data) == 0:
         return 0
     
+   sum = int(sum)
     cal_mean = sum(data) / len(data)
     
     variance = sum((data - cal_mean) ** 2 for data in data) / len(data)
