@@ -1,8 +1,8 @@
 import math
-from FileReader import readCSV
+from readcsvfile import reader
 
-x = readCSV("xvalues.csv")
-y= readCSV("yvalues.csv")
+x = reader("xvalues.csv")
+y= reader("yvalues.csv")
 
 def population_corelation_coefficient(x,y):
     if len(x) == 0 or len(y) == 0 or len(x) != len(y):
