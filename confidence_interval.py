@@ -1,5 +1,7 @@
 from readcsvfile import reader
 
+import math
+
 confidence = 0.95
 
 data = reader('data.csv')
