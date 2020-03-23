@@ -3,7 +3,7 @@ import math
 
 data = readCSV('data.csv', nrows = 10)
 
-def sample_standardDeviation(dataSet):
+def sample_standardDeviation(data):
     mean = sum(data) / len(data)
     std = math.sqrt(sum([(val - mean)**2 for val in data])/(len(data) - 1))
 
