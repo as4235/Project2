@@ -7,6 +7,7 @@ data = reader('data.csv')
 def SampMean(data):
         if len(data) == 0:
                 return 0
+        data = int(data)
         smean = sum(data) / len(data)
         sum = int(sum)
         return smean
