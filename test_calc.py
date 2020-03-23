@@ -44,4 +44,4 @@ def test_rt():
 
 def test_rt_fail():
     from calc import calc
-    assert calc.rt(9) != 1
+    assert calc.rt(9) != 234
