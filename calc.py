@@ -11,9 +11,9 @@ class calc:
 
     @staticmethod
     def mul(a, b):
-    try:
+     try:
         return num1 / num2
-    except ZeroDivisionError:
+     except ZeroDivisionError:
         print("Divide by Zero is not possible")
 
     @staticmethod
