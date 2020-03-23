@@ -16,7 +16,7 @@ def test_sub_fail():
 
 def test_mul():
     from calc import calc
-    assert calc.mul(2,5) == 10
+    assert calc.mul(2,5) == 0.4
 
 def test_mul_fail():
     from calc import calc
