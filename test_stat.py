@@ -64,51 +64,51 @@ class test_stat(unittest.TestCase):
         assert stdscore(data) != 16
  
 # confidence interval
-    def test_calc_confidenceInterval():
+    def test_calc_confidenceInterval(self):
         from confidence_interval import confidenceInterval
         assert confidenceInterval(testData) == 1.076
 
-    def test_calc_confidenceInterval_fail():
+    def test_calc_confidenceInterval_fail(self):
         from confidence_interval import confidenceInterval
         assert confidenceInterval(testData) != 5
  
 
 # Population variance
-    def test_calc_variance():
+    def test_calc_variance(self):
         from population_variance import pop_variance
         assert variance(data) == variance(data)
 
-    def test_calc_variance_fail():
+    def test_calc_variance_fail(self):
         from population_variance import pop_variance
         assert variance(data) != 2
         
         
  #Sample Mean 
-    def test_calc_sampleMean():
+    def test_calc_sampleMean(self):
         from sample_mean import SampMean
         assert SampMean(testData) == 2
 
-    def test_calc_sampleMean_fail():
+    def test_calc_sampleMean_fail(self):
         from sample_mean import SampMean
         assert SampMean(testData) != 1
        
   
 # Sample Standard deviation 
-    def test_calc_std():
+    def test_calc_std(self):
         from sample_SD import sample_standardDeviation
         assert sample_standardDeviation(data) == sample_standardDeviation(data)
 
-    def test_calc_std_fail():
+    def test_calc_std_fail(self):
         from StatisticsModule import standardDeviation
         assert sample_standardDeviation(data) != 2
     
     
   # Variance of sample proportion
-    def test_calc_varianceSampleProportion():
+    def test_calc_varianceSampleProportion(self):
         from variance_of_sample_proportion import VSP
         assert VSP(testData) == 1
 
-    def test_calc_varianceSampleProportion_fail():
+    def test_calc_varianceSampleProportion_fail(self):
         from variance_of_sample_proportion import VSP
         assert VSP(testData) != 2
 
