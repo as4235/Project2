@@ -1,7 +1,7 @@
-from FileReader import readCSV
+from readcsvfile import reader
 import math
 
-data = readCSV('data.csv', nrows = 10)
+data = reader('data.csv', nrows = 10)
 
 def sample_standardDeviation(data):
     mean = sum(data) / len(data)
