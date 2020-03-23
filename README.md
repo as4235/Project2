@@ -6,6 +6,8 @@ Ajay Kumar Selvaraj Rajagopal, Mohammed Yahya Muhammad Rafih Hassan
 
 [![Build Status](https://travis-ci.org/as4235/project2.svg?branch=master)](https://travis-ci.org/as4235/project2)
 
+## Ajay Kumar Selvaraj Rajagopal,
+
 - [x] Calculator Module and Test
 
 - [x] Definitions
@@ -27,6 +29,8 @@ Ajay Kumar Selvaraj Rajagopal, Mohammed Yahya Muhammad Rafih Hassan
 - [x] zscore function and test
 
 - [x] standardized score function and test
+
+## Mohammed Yahya Muhammad Rafih Hassan
 
 - [ ] Population Correlation Coefficient function and test
 
