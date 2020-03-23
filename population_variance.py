@@ -1,7 +1,7 @@
-from FileReader import readCSV
+from readcsvfile import reader
 import math
 
-data = readCSV('data.csv')
+data = reader('data.csv')
 
 def pop_variance(data):
     if len(data) == 0:
