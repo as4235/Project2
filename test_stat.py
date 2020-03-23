@@ -33,7 +33,7 @@ class test_stat(unittest.TestCase):
 
     def test_popstddev(self):
         from popstddev import popstddev
-        assert popstddev(data) == 1631.8995342851226
+        assert popstddev(data) == 1631.8995342851229
 
     def test_popstddev_fail(self):
         from popstddev import popstddev
@@ -41,7 +41,7 @@ class test_stat(unittest.TestCase):
 
     def test_variancepopprop(self):
         from variancepopprop import variancepopprop
-        assert variancepopprop(data) ==  1034.497285714286
+        assert variancepopprop(data) == 603.45675
 
     def test_variancepopprop_fail(self):
         from variancepopprop import variancepopprop
@@ -49,7 +49,7 @@ class test_stat(unittest.TestCase):
 
     def test_zscore(self):
         from zscore import zscore
-        assert zscore(data) == 1631.8995342851226
+        assert zscore(data) == 1631.8995342851233
 
     def test_zscore_fail(self):
         from zscore import zscore
@@ -57,7 +57,7 @@ class test_stat(unittest.TestCase):
 
     def test_stdscore(self):
         from stdscore import stdscore
-        assert stdscore(data) == 1631.8995342851226
+        assert stdscore(data) == 1631.8995342851229
 
     def test_stdscore_fail(self):
         from stdscore import stdscore
