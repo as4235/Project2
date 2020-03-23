@@ -1,8 +1,8 @@
-from FileReader import readCSV
+from readcsvfile import reader
 
 confidence = 0.95
 
-data = readCSV('data.csv')
+data = readerV('data.csv')
 
 def confidenceInterval(data):
     a = len(data)
