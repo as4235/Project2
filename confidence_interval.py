@@ -9,7 +9,7 @@ data = reader('data.csv')
 def confidenceInterval(data):
     a = len(data)
     b = sum(data) / a
-    std = math.sqrt(sum([(val - b)**2 for val in dataSet])/(len(data) - 1))
+    std = math.sqrt(sum([(val - b)**2 for val in data])/(len(data) - 1))
     std_err = std / math.sqrt(a)
     t = b / std_err
     h = std_err * t * float(1 + confidence) / float(2., a - 1)
