@@ -7,5 +7,8 @@ python:
   - "3.8-dev"
 install:
   - pip install -r requirements.txt
+git:
+  depth: 25
+  quiet: true  
 script:
   - pytest
