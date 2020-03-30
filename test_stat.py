@@ -41,7 +41,7 @@ class test_stat(unittest.TestCase):
 
     def test_variancepopprop(self):
         from variancepopprop import variancepopprop
-        assert variancepopprop(data) == 8.381025000000026
+        assert variancepopprop(data) == 88.51554711914066
 
     def test_variancepopprop_fail(self):
         from variancepopprop import variancepopprop
@@ -57,7 +57,7 @@ class test_stat(unittest.TestCase):
 
     def test_stdscore(self):
         from stdscore import stdscore
-        assert stdscore(data) == 1384.8464158727334
+        assert stdscore(data) == 1494.3246635186076
 
     def test_stdscore_fail(self):
         from stdscore import stdscore
@@ -70,20 +70,20 @@ class test_stat(unittest.TestCase):
         
     def test_popvar(self):
         from popvar import popvar
-        assert popvar(data) == 0.00017951815835750415
+        assert popvar(data) == 2063900.788760331
         
     def test_prop(self):
         from prop import prop
-        assert prop(data) == 0.002564102564102564
+        assert prop(data) == 1.3774673884595782e-05
         
     def test_smean(self):
         from smean import smean
-        assert smean(data) == 196.0
+        assert smean(data) == 1.0
         
     def test_sstddev(self):
         from sstddev import sstddev
-        assert sstddev(data) == 188.84702804121648
+        assert sstddev(data) == 0.0
         
     def test_vsampprop(self):
         from vsampprop import vsampprop
-        assert vsampprop(data) == 0.0005581277829308491
+        assert vsampprop(data) == 0.00017951815835750415
