@@ -67,9 +67,6 @@ class test_stat(unittest.TestCase):
         from popcorcoeff import popcorcoeff
         assert popcorcoeff(data, data) == 0.9888888888888889 
         
-    def test_conint(self):
-        from conint import conint
-        assert conint(data) == [1758.1902724304498, 18.476394236216947]
         
     def test_popvar(self):
         from popvar import popvar
