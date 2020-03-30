@@ -6,113 +6,32 @@ testData = [1,2,3]
 data = reader('data.csv')
 
 class test_stat(unittest.TestCase):
-
-    def test_pmean(self):
-        from pmean import pmean
-        assert pmean(data) == 805.1
-
-    def test_pmean_fail(self):
-        from pmean import pmean
-        assert pmean(data) != 80
-
-    def test_median(self):
-        from median import median
-        assert median(data) == 251.0
-
-    def test_median_fail(self):
-        from median import median
-        assert median(data) != 25
-
-    def test_mode(self):
-        from mode import mode
-        assert mode(data) == '123'
-
-    def test_mode_fail(self):
-        from mode import mode
-        assert mode(data) != '23'
-
-    def test_popstddev(self):
-        from popstddev import popstddev
-        assert popstddev(data) == 1631.8995342851226
-
-    def test_popstddev_fail(self):
-        from popstddev import popstddev
-        assert popstddev(data) != 16
-
-    def test_variancepopprop(self):
-        from variancepopprop import variancepopprop
-        assert variancepopprop(data) ==  1034.497285714286
-
-    def test_variancepopprop_fail(self):
-        from variancepopprop import variancepopprop
-        assert variancepopprop(data) !=  1
-
-    def test_zscore(self):
-        from zscore import zscore
-        assert zscore(data) == 1631.8995342851226
-
-    def test_zscore_fail(self):
-        from zscore import zscore
-        assert zscore(data) != 16
-
-    def test_stdscore(self):
-        from stdscore import stdscore
-        assert stdscore(data) == 1631.8995342851226
-
-    def test_stdscore_fail(self):
-        from stdscore import stdscore
-        assert stdscore(data) != 16
- 
-# confidence interval
-    def test_calc_confidenceInterval():
-        from confidence_interval import confidenceInterval
-        assert confidenceInterval(testData) == 1.076
-
-    def test_calc_confidenceInterval_fail():
-        from confidence_interval import confidenceInterval
-        assert confidenceInterval(testData) != 5
- 
-
-# Population variance
-    def test_calc_variance():
-        from population_variance import pop_variance
-        assert variance(data) == variance(data)
-
-    def test_calc_variance_fail():
-        from population_variance import pop_variance
-        assert variance(data) != 2
+    def test_popcorcoeff(self):
+        from popcorcoeff import popcorcoeff
+        assert popcorcoeff(data, data) == 0.9722222222222224
+    def test_conint(self):
+        from conint import conint
+        assert conint(data) == [1758.1902724304498, 18.476394236216947]
         
+    def test_popvar(self):
+        from popvar import popvar
+        assert popvar(data) == 2889718.8888888876
         
- #Sample Mean 
-    def test_calc_sampleMean():
-        from sample_mean import SampMean
-        assert SampMean(testData) == 2
-
-    def test_calc_sampleMean_fail():
-        from sample_mean import SampMean
-        assert SampMean(testData) != 1
-       
-  
-# Sample Standard deviation 
-    def test_calc_std():
-        from sample_SD import sample_standardDeviation
-        assert sample_standardDeviation(data) == sample_standardDeviation(data)
-
-    def test_calc_std_fail():
-        from StatisticsModule import standardDeviation
-        assert sample_standardDeviation(data) != 2
+    def test_prop(self):
+        from prop import prop
+        assert prop(data) == 0.002564102564102564
+        
+    def test_smean(self):
+        from smean import smean
+        assert smean(data) == 196.0
+        
+    def test_sstddev(self):
+        from sstddev import sstddev
+        assert sstddev(data) == 188.84702804121648
+        
+    def test_vsampprop(self):
+        from vsampprop import vsampprop
+        assert vsampprop(data) == 0.0005581277829308491
+        
     
-    
-  # Variance of sample proportion
-    def test_calc_varianceSampleProportion():
-        from variance_of_sample_proportion import VSP
-        assert VSP(testData) == 1
-
-    def test_calc_varianceSampleProportion_fail():
-        from variance_of_sample_proportion import VSP
-        assert VSP(testData) != 2
-
-   
-# Correlation Coefficient
-# Proportion
-
+               
