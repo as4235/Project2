@@ -17,7 +17,7 @@ class test_stat(unittest.TestCase):
 
     def test_median(self):
         from median import median
-        assert median(data) == 235.5
+        assert median(data) == 8.0
 
     def test_median_fail(self):
         from median import median
@@ -25,7 +25,7 @@ class test_stat(unittest.TestCase):
 
     def test_mode(self):
         from mode import mode
-        assert mode(data) == '1'
+        assert mode(data) == 1.0
 
     def test_mode_fail(self):
         from mode import mode
@@ -33,7 +33,7 @@ class test_stat(unittest.TestCase):
 
     def test_popstddev(self):
         from popstddev import popstddev
-        assert popstddev(data) == 1347.0801868648168
+        assert popstddev(data) == 1413.767041453435
 
     def test_popstddev_fail(self):
         from popstddev import popstddev
@@ -49,7 +49,7 @@ class test_stat(unittest.TestCase):
 
     def test_zscore(self):
         from zscore import zscore
-        assert zscore(data) == 1436.6279228667147
+        assert zscore(data) == 1519.291890889379
 
     def test_zscore_fail(self):
         from zscore import zscore
@@ -65,7 +65,7 @@ class test_stat(unittest.TestCase):
  
     def test_popcorcoeff(self):
         from popcorcoeff import popcorcoeff
-        assert popcorcoeff(data, data) == 0.9722222222222224
+        assert popcorcoeff(data, data) == 0.9888888888888889 
         
     def test_conint(self):
         from conint import conint
@@ -73,7 +73,7 @@ class test_stat(unittest.TestCase):
         
     def test_popvar(self):
         from popvar import popvar
-        assert popvar(data) == 2889718.8888888876
+        assert popvar(data) == 0.00017951815835750415
         
     def test_prop(self):
         from prop import prop
