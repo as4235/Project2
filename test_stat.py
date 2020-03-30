@@ -63,9 +63,10 @@ class test_stat(unittest.TestCase):
         from stdscore import stdscore
         assert stdscore(data) != 16
  
-def test_popcorcoeff(self):
+    def test_popcorcoeff(self):
         from popcorcoeff import popcorcoeff
         assert popcorcoeff(data, data) == 0.9722222222222224
+        
     def test_conint(self):
         from conint import conint
         assert conint(data) == [1758.1902724304498, 18.476394236216947]
