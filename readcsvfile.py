@@ -8,6 +8,6 @@ def reader(file):
         value = csv.reader(file)
         for row in value:
             row = row.pop(0)
-            data.append(row)
+            data.append(float(row))
 
     return data
