@@ -34,18 +34,16 @@ Ajay Kumar Selvaraj Rajagopal, Mohammed Yahya Muhammad Rafih Hassan
 
 ## Mohammed Yahya Muhammad Rafih Hassan
 
-- [ ] Population Correlation Coefficient function and test
+- [x] Population Correlation Coefficient function and test
 
-- [ ] Confidence Interval function and test
+- [x] Confidence Interval function and test
 
-- [ ] Population Variance function and test
+- [x] Population Variance function and test
 
-- [ ] P Value function and test
+- [x] Proportion function and test
 
-- [ ] Proportion function and test
+- [x] Sample Mean function and test
 
-- [ ] Sample Mean function and test
+- [x] Sample Standard Deviation function and test
 
-- [ ] Sample Standard Deviation function and test
-
-- [ ] Variance of sample proportion function and test
+- [x] Variance of sample proportion function and test
