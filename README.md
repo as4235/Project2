@@ -6,9 +6,7 @@ Ajay Kumar Selvaraj Rajagopal, Mohammed Yahya Muhammad Rafih Hassan
 
 [![Build Status](https://travis-ci.org/as4235/project2.svg?branch=master)](https://travis-ci.org/as4235/project2)
 
-<img src="Images/.png">
-
-<img src="Images/.png">
+<img src="Images/Travis.png">
 
 ## Ajay Kumar Selvaraj Rajagopal,
 
